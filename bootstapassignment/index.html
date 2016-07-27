@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		
+		<!-- Website Title & Description for Search Engine purposes -->
+		<title></title>
+		<meta name="description" content="">
+		
+		<!-- Mobile viewport optimized -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		
+		<!-- Bootstrap CSS -->
+		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		<link href="includes/css/bootstrap-glyphicons.css" rel="stylesheet">
+		
+		<!-- Custom CSS -->
+		<link href="includes/css/styles.css" rel="stylesheet">
+		
+		<!-- Include Modernizr in the head, before any other Javascript -->
+		<script src="includes/js/modernizr-2.6.2.min.js"></script>
+
+		
+	</head>
+	<body>
+	     <div class="container" id="main"> 
+
+             <div class="navbar navbar-inverse navbar-fixed-top">
+                <div class="container">
+                     <button class="navbar-toggle" data-target=".navbar-responsive-collapse" data-toggle="collapse" type="button">
+                	           <span class="icon-bar"></span>
+                	           <span class="icon-bar"></span>
+                	           <span class="icon-bar"></span>
+                      </button>
+                 <a class="navbar-brand" href="/"><img src="images/cricbuzz.png"></a>
+                 <div class="nav-collapse collapse navbar-responsive-collapse">
+                     <ul class="nav navbar-nav">
+                            <li class="active">
+                                 <a href="#">Home</a>
+                            </li>
+                            <li >
+                                 <a href="#">Live Scores</a>
+                            </li>
+                            <li >
+                                 <a href="#">Results</a>
+                            </li>
+                         <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">News<strong class="caret"></strong></a>
+                            <ul class="dropdown-menu">
+                            	<li>
+                            	    <a href="#">All Stories</a>
+                            	</li>
+                            	 <li>
+                            	    <a href="#">Latest News</a>
+                            	 </li>
+                            	 <li>
+                            	    <a href="#">Stars</a>
+                            	 </li>
+                            	 <li>
+                            	    <a href="#">Spot Light</a>
+                            	 </li>
+                            </ul>
+                         </li>
+                         <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Teams<strong class="caret"></strong></a>
+                            <ul class="dropdown-menu">
+                            	<li>
+                            	    <a href="#">India</a>
+                            	 </li>
+                            	 <li>
+                            	    <a href="#">Australia</a>
+                                 </li>
+                            	 <li>
+                            	    <a href="#">South Africa</a>
+                            	 </li>
+                            	 <li>
+                            	    <a href="#">Newzeland</a>
+                            	 </li>
+                            </ul>
+                         </li>
+                         <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Series<strong class="caret"></strong></a>
+                            <ul class="dropdown-menu">
+                            	<li>
+                            	    <a href="#">India tour Of WestIndies,2016</a>
+                            	 </li>
+                            	 <li>
+                            	    <a href="#">Carribean Premier League,2016</a>
+                            	 </li>
+                            	 
+                            </ul>
+                         </li>
+                         <li >
+                            <a href="#">Rankings</a>
+                         </li>
+                     </ul>
+                     <form class="navbar-form pull-left">
+                     <input type="text" class="form-control" placeholder="search for the player" id="search">
+                           <button type="submit" class="btn btn-primary">
+                                   <span class="glyphicon glyphicon-search">
+                                   </span>
+                           </button>
+                     </form>
+
+                     <ul class="nav navbar-nav pull-right">
+                        <li class="dropdown">  
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown" ><span class="glyphicon glyphicon-user"></span>Register<strong class="caret"></strong>
+                          </a>
+                        <ul class="dropdown-menu">
+                          <li>
+                           <a href="#"><span class="glyphicon glyphicon-refresh">
+                                   </span>Update Profile</a>
+                           </li>
+                           <li>
+                           <a href="#"><span class="glyphicon glyphicon-briefcase">
+                                   </span>Billing</a>
+                           </li>
+                        </ul>
+                        </li>
+                        
+                     </ul>
+                  
+                 </div>
+             </div>
+        </div>
+			<div class="carousel slide" id="myCarousel">
+
+				<ol class="carousel-indicators">
+					<li class="active" data-slide-to="0" data-target="#myCarousel"></li>
+					<li data-slide-to="1" data-target="#myCarousel"></li>
+					<li data-slide-to="2" data-target="#myCarousel"></li>
+				</ol>
+
+				<div class="carousel-inner">
+					<div class="item active" id="slide1">
+						<div class="carousel-caption">
+							<h4>World Cup 2011</h4>
+											<p>India Lifting Worldcup</p>
+						</div>
+					</div>
+					
+					<div class="item" id="slide2">
+						<div class="carousel-caption">
+							<h4>World Cup 2015</h4>
+							<p>Australia Lifting Worldcup</p>
+						</div>
+					</div>
+					
+					<div class="item" id="slide3">
+						<div class="carousel-caption">
+							<h4>World cup 2019</h4>
+							<p>South Africa Lifting Worldcup</p>
+						</div>
+					</div>
+				</div>
+	
+	
+	<a class="left carousel-control" data-slide="prev" href="#myCarousel"><span class="icon-prev"></span></a>
+	<a class="right carousel-control" data-slide="next" href="#myCarousel"><span class="icon-next"></span></a>
+
+</div>
+
+	    
+   	<div class="row" id="bigCallout">
+				<div class="col-12">
+					
+					<div class="alert alert-success alert-block fade in" id="successAlert">
+						<button type="button" class="close" data-dismiss="alert">&times;</button>
+						
+						<h4>Hurray!</h4>
+						<p>Congratulations</p>
+					</div><!-- end alert -->
+					
+					<!-- Visible only on small devices -->
+					<div class="well well-small visible-sm">
+						<a href="" class="btn btn-large btn-block btn-default"><span class="glyphicon glyphicon-phone"></span> Give us a call!</a>
+					</div><!-- end well-small -->
+					
+					<div class="well">
+						<div class="page-header">
+							<h1>proud of their nation<small>played under critical conditions</small></h1>
+						</div><!-- end page-header -->
+						
+						<p class="lead">Memorable Movements</p>
+						
+						<a href="" class="btn btn-large btn-primary" id="alertMe">Click on this button</a>
+						
+					</div><!-- end well -->
+					
+				</div><!-- end col-12 -->
+			</div><!-- end bigCallout -->
+	    
+
+ 
+
+        <div class="=row" id="featureHeadings">
+             <div class="col-12">
+                  <h3>Best Team</h3>
+             </div>
+
+        </div>
+ 
+        <div class="row" id="features">
+            <div class="col-sm-4 feature">
+                 <div class="panel">
+                         <div class="panel-heading">
+                              
+                              <a href="#collapse1" data-toggle="collapse"><h3 class="panel-title">Mr.Cool</h3></a>
+                         </div>
+                           <img src="images/msd1.jpg" alt="MSD" class="img-thumbnail">
+
+                          <div id="collapse1" class="panel-collapse collapse"> 
+                             <ul class="list-group">
+                                <li class="list-group-item">Born/age:: Jan 24, 1980</li>
+				                <li class="list-group-item">Height: 160 cm</li>
+				                <li class="list-group-item">Team: Chennai Super Kings</li>
+				                <li class="list-group-item">Nationality:Indian</li>
+				               
+                             </ul>
+                          </div>  
+                               
+                   
+                   </div>
+           </div>
+
+            <div class="col-sm-4 feature">
+                 <div class="panel">
+                         <div class="panel-heading">
+                              
+                              <a href="#collapse2" data-toggle="collapse"><h3 class="panel-title">Mr.360</h3></a>
+                         </div>
+                           <img src="images/ABD1.jpg" alt="ABD" class="img-thumbnail">
+
+                          <div id="collapse2" class="panel-collapse collapse"> 
+                             <ul class="list-group">
+                                <li class="list-group-item">Born/age:: feb 24, 1987</li>
+				                <li class="list-group-item">Height: 150 cm</li>
+				                <li class="list-group-item">Team: Royal Challengers bangalore</li>
+				                <li class="list-group-item">Nationality:South Africa</li>
+				               
+                             </ul>
+                          </div>  
+                               
+                   
+                   </div>
+           </div>
+
+<div class="col-sm-4 feature">
+                 <div class="panel">
+                         <div class="panel-heading">
+                              
+                              <a href="#collapse3" data-toggle="collapse"><h3 class="panel-title">Bengal Tiger</h3></a>
+                         </div>
+                           <img src="images/SAURAV1.jpg" alt="Saurav Ganguly" class="img-thumbnail">
+
+                          <div id="collapse3" class="panel-collapse collapse"> 
+                             <ul class="list-group">
+                                <li class="list-group-item">Born/age:: Mar 24, 1985</li>
+				                <li class="list-group-item">Height: 155 cm</li>
+				                <li class="list-group-item">Team: Kolkata Knight Riders</li>
+				                <li class="list-group-item">Nationality:indian</li>
+				               
+                             </ul>
+                          </div>  
+                               
+                   
+                   </div>
+           </div>
+
+            <div class="col-sm-4 feature">
+                 <div class="panel">
+                         <div class="panel-heading">
+                              
+                              <a href="#collapse4" data-toggle="collapse"><h3 class="panel-title">Mr.Express</h3></a>
+                         </div>
+                           <img src="images/sehwag1.jpg" alt="virender sehwag" class="img-thumbnail">
+
+                          <div id="collapse4" class="panel-collapse collapse"> 
+                             <ul class="list-group">
+                                <li class="list-group-item">Born/age:: Apr 24, 1988</li>
+				                <li class="list-group-item">Height: 140 cm</li>
+				                <li class="list-group-item">Team: Delhi Dare Devils</li>
+				                <li class="list-group-item">Nationality:Indian</li>
+				               
+                             </ul>
+                          </div>  
+                               
+                   
+                   </div>
+           </div>
+
+         <div class="col-sm-4 feature">
+                 <div class="panel">
+                         <div class="panel-heading">
+                              
+                              <a href="#collapse5" data-toggle="collapse"><h3 class="panel-title">Mr.Flight</h3></a>
+                         </div>
+                           <img src="images/Gilchrist1.jpg" alt="Adam Glichrist" class="img-thumbnail">
+
+                          <div id="collapse5" class="panel-collapse collapse"> 
+                             <ul class="list-group">
+                                <li class="list-group-item">Born/age:: May 24, 1987</li>
+				                <li class="list-group-item">Height: 154  cm</li>
+				                <li class="list-group-item">Team :Deccan Chargers</li>
+				                <li class="list-group-item">Nationality:Australia</li>
+				               
+                             </ul>
+                          </div>  
+                               
+                   
+                   </div>
+           </div>
+
+           <div class="col-sm-4 feature">
+                 <div class="panel">
+                         <div class="panel-heading">
+                              
+                              <a href="#collapse6" data-toggle="collapse"><h3 class="panel-title">Mr.Perfect</h3></a>
+                         </div>
+                           <img src="images/ricky1.jpg" alt="Ricky ponting" class="img-thumbnail">
+
+                          <div id="collapse6" class="panel-collapse collapse"> 
+                             <ul class="list-group">
+                                <li class="list-group-item">Born/age:: Jan 24, 1987</li>
+				                <li class="list-group-item">Height: 130 cm</li>
+				                <li class="list-group-item">team:Mumbai Indians</li>
+				                <li class="list-group-item">Nationality:Australia</li>
+				               
+                             </ul>
+                          </div>  
+                               
+                   
+                   </div>
+           </div>
+
+         </div>
+
+        <div class="row" id="moreInfo">
+            <div class="col-sm-6">
+               <h3>Neat Tab Sections</h3>
+                  <div class="tabable">
+                      <ul class="nav nav-tabs">
+                         <li class="active"><a href="#tab1" data-toggle="tab">Section1</a></li>
+                          <li><a href="#tab2" data-toggle="tab">Section2</a></li>
+                         </ul>
+                         <div class="tab-content">
+                             <div class="tab-pane active" id="tab1">
+                                 <h4>
+                                     <span class="glyphicon glyphicon-map-marker"></span>Our Location<small>My Favourite Spot</small></h4>
+
+                                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.2907243884633!2d-0.08992078432201894!3d51.50788211848916!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876035159bb13c5%3A0xa61e28267c3563ac!2sLondon+Bridge!5e0!3m2!1sen!2sin!4v1469532746596" width="565" height="200" frameborder="0" style="border:0" marginheight="0" marginwidth="0" scrolling="no" allowfullscreen></iframe>
+
+                                     <p>Bangalore /bæŋɡəˈlɔːr/, officially known as Bengaluru[8] ([ˈbeŋɡəɭuːɾu] ( listen)), is the capital of the Indian state of Karnataka. It has a population of about 8.42 million and a metropolitan population of about 8.52 million, making it the third most populous city and fifth most populous urban agglomeration in India.[5] Located in southern India on the Deccan Plateau, at a height of over 900 m (3,000 ft) above sea level, Bangalore is known for its pleasant climate throughout the year. Its elevation is the highest among the major large cities of India.[9]</p>
+
+                                     <p>A succession of South Indian dynasties, the Western Gangas, the Cholas and the Hoysalas, ruled the present region of Bangalore until in 1537 CE, Kempé Gowdā – a feudal ruler under the Vijayanagara Empire</p>
+                             </div> 
+                             <div class="tab-pane" id="tab2">
+                                  <h4>Sachin</h4> 
+                                  <img src="images/sachin2.jpg" class="thumbnail pull-left">
+                                     <p>Sachin Ramesh Tendulkar (Listeni/ˌsətʃɪn tɛnˈduːlkər/; born 24 April 1973) is a former Indian cricketer and captain, widely regarded as one of the greatest batsmen of all time.[4] He took up cricket at the age of eleven, made his Test debut on 15 November 1989 against Pakistan in Karachi at the age of sixteen, and went on to represent Mumbai domestically and India internationally for close to twenty-four years. He is the only player to have scored one hundred international centuries, the first batsman to score a double century in a One Day International, the holder of the record for the number of runs in both ODI and Test cricket, and the only player to complete more than 30,000 runs in international cricket</p>
+
+                                     <p>In 2002 just half way through his career, Wisden Cricketers' Almanack ranked him the second greatest Test batsman of all time, behind Don Bradman, and the second greatest ODI batsman of all time, behind Viv Richards.[6] Later in his career, Tendulkar was a part of the Indian team that won the 2011 World Cup, his first win in six World Cup appearances for India.[7] He had previously been named "Player of the Tournament" at the 2003 edition of the tournament, held in South Africa. In 2013, he was the only Indian cricketer included in an all-time Test World XI named to mark the 150th anniversary of Wisden Cricketers' Almanack</p>
+
+                                     <hr>
+                                     <a href="#bookId" role="button" class="btn btn-warning" data-toggle="modal"><span class="glyphicon glyphicon-hand-up"></span>Book the tickets</a>
+
+                                     <div class="modal fade" id="bookId">
+                                         <div class="modal-dialog">
+                                             <div class="modal-content">
+                                             	 <div class="modal-header">
+                                             	 	 <button class="close" data-dismiss="modal">&times;</button>
+                                             	 	 <h4 class="modal-title">Book your Tickets</h4>
+                                             	 </div>
+
+                                             	 <div class="modal-body">
+                                             	 	<form class="form-horizontal">
+                                                         <div class="form-group ">
+                                                             <label class="control-label col-lg-2" for="inp">Number of tickets</label>
+                                                                   <div class="col-lg-10" >
+                                                                        <input type="num" class="form-control" name="inp">
+                                                                   </div>
+                                                         </div>
+                                                          <div class="form-group">
+	                                                          <label for="type">Type of Tickets:</label>
+	                                                               <select class="" name="" class="form-control">
+	                                                                 <option value="VIP">VIP</option>
+	                                                                 <option value="Sachin Tendulkar">Sachin Tendulkar</option>
+	                                                                 <option value="Sunil Gavaskar">Sunil Gavaskar</option>
+	                                                                 </select>
+	                                                     </div>
+                                             	 	</form>
+
+                                             	 </div>
+                                             	 	<div class="modal-footer">
+                                             	 	    <button class="btn btn-default" data-dismiss="modal" type="button">Cancel</button>
+                                             	 	    <button class="btn btn-primary" type="button">Make Payment</button>
+                                             	 	</div>
+                                             </div>
+                                         </div>
+                                     </div>
+                             </div>
+                         </div>
+                  </div>
+            </div>
+            <div class="col-sm-6">
+                 <h3>Some Text</h3>
+                 <p>
+                    Tendulkar received the Arjuna Award in 1994 for his outstanding sporting achievement, the Rajiv Gandhi Khel Ratna award in 1997, India's highest sporting honour, and the Padma Shri and Padma Vibhushan awards in 1999 and 2008, respectively, India's fourth and second highest civilian awards.[11] After a few hours of his final match on 16 November 2013, the Prime Minister's Office announced the decision to award him the Bharat Ratna, India's highest civilian award.
+                 </p>
+
+                 <h4>A List Group</h4>
+                 <div class="list-group">
+                 	 <a href="#" class="list-group-item">
+                 	 <h4 class="list-group-item-heading">Lokesh</h4>
+                 	 <p class="list-group-item-text">He is the youngest recipient to date and the first ever sportsperson to receive the award.[14][15] He also won the 2010 Sir Garfield Sobers Trophy for cricketer of the year at the ICC awards.</p>
+                     </a>
+                      <a href="#" class="list-group-item">
+                 	 <h4 class="list-group-item-heading">Madhu</h4>
+                 	 <p class="list-group-item-text">In December 2012, Tendulkar announced his retirement from ODIs.[21] He retired from Twenty20 cricket in October 2013[22] and subsequently announced his retirement from all forms of cricket.</p>
+                     </a>
+                      <a href="#" class="list-group-item">
+                 	 <h4 class="list-group-item-heading">Chaitu</h4>
+                 	 <p class="list-group-item-text">Achrekar was impressed with Tendulkar's talent and advised him to shift his schooling to Sharadashram Vidyamandir (English) High School,[1] a school at Dadar which had a dominant cricket team .</p>
+                     </a>
+                   </div>
+
+            </div>
+        </div>
+
+        
+
+	</div>
+
+<footer>
+ <div class="container">
+     <div class="row">
+         <div class="col-sm-2">
+             <h5>Copyright &copy;2016</h5>
+         </div>
+         <div class="col-sm-4">
+             <h5>About Us</h5>
+             <p>The object of these conditions for the use of the this website is to govern the free provision to the general public and FCB supporters in particular of access to sporting, institutional and social information, as well as information about the products and services offered by FCB, or by the CLUB’s third party suppliers and/or collaborators, that could be of interest to the user.</p>
+         </div>
+         <div class="col-sm-2">
+             <h5>Navigation</h5>
+                <ul class="unstyled">
+                   <li><a href="#">Home</a></li>
+                   <li><a href="#">Service</a></li>
+                   <li><a href="#">Contact</a></li>
+                   <li><a href="#">Links</a></li>
+                </ul>
+         </div>
+         <div class="col-sm-2">
+             <h5>Like us on</h5>
+                <ul class="unstyled">
+                   <li><a href="#">Twitter</a></li>
+                   <li><a href="#">facebook</a></li>
+                   <li><a href="#">youtube</a></li>
+                   <li><a href="#">google plus</a></li>
+                </ul>
+         </div>
+         <div class="col-sm-2">
+         	<h6>Coded with <span class="glyphicon glyphicon-heart"></span>by Lokesh</h6>
+         </div>
+
+      </div>  
+  </div>     
+</footer>
+
+
+	<script src="http://code.jquery.com/jquery.js"></script>
+	
+	<!-- If no online access, fallback to our hardcoded version of jQuery -->
+	<script>window.jQuery || document.write('<script src="includes/js/jquery-1.8.2.min.js"><\/script>')</script>
+	
+	<!-- Bootstrap JS -->
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+	
+	<!-- Custom JS -->
+	<script src="includes/js/script.js"></script>
+	
+	</body>
+</html>
+
